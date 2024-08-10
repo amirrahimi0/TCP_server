@@ -29,3 +29,19 @@ Messages with the prefix `p2`: These are of type string and are stored according
 **m_int**: This column is an integer representation of the message data (m_data). If m_type_int is 0, the m_int value might be 0 or irrelevant because the message data is a string (p2). When m_type_int is 1, the m_int contains a numeric interpretation of m_data.
 
 **m_date**: This attribute records the time when the message was processed or logged. It’s stored in a text format representing the time in the “HH:MM:SS” format.
+
+# How To compile and run
+1. `mkdir build`
+
+2. `cd build`
+
+3. `cmake ..`
+
+4. `make`
+
+5. `ctest`
+
+6. `./server`
+
+7. `./client`
+
